@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Auto Scrolling Images</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      font-family: sans-serif;
+    }
+
+    .scroll-container {
+      width: auto;
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+    }
+
+    .scroll-content {
+      display: inline-block;
+      white-space: nowrap;
+      animation: scroll-left 20s linear infinite;
+    }
+
+    .scroll-content img {
+      height: 100%;
+      margin-right: 20px;
+      display: inline-block;
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="scroll-container">
+    <div class="scroll-content" id="imageRow">
+      <img src="C:\Users\RAHUL KUMAR\Desktop\CodSoft\collegetips.in\IMG-20250529-WA0001.jpg" alt="Image 1" />
+      <img src="C:\Users\RAHUL KUMAR\Desktop\CodSoft\collegetips.in\IMG-20250529-WA0002.jpg" alt="Image 2" />
+      <img src="C:\Users\RAHUL KUMAR\Desktop\CodSoft\collegetips.in\IMG-20250529-WA0003.jpg" alt="Image 3" />
+      <img src="C:\Users\RAHUL KUMAR\Desktop\CodSoft\collegetips.in\IMG-20250529-WA0004.jpg" alt="Image 4" />
+      <img src="C:\Users\RAHUL KUMAR\Desktop\CodSoft\collegetips.in\IMG-20250529-WA0005.jpg" alt="Image 5" />
+      <!-- Clone the same images for seamless scroll -->
+      <img src="C:\Users\RAHUL KUMAR\Desktop\CodSoft\collegetips.in\IMG-20250529-WA0006.jpg" alt="Image 1" />
+      <img src="C:\Users\RAHUL KUMAR\Desktop\CodSoft\collegetips.in\IMG-20250529-WA0007.jpg" alt="Image 2" />
+      <img src="C:\Users\RAHUL KUMAR\Desktop\CodSoft\collegetips.in\IMG-20250529-WA0008.jpg" alt="Image 3" />
+      <img src="C:\Users\RAHUL KUMAR\Desktop\CodSoft\collegetips.in\IMG-20250529-WA0009.jpg" alt="Image 4" />
+      <img src="C:\Users\RAHUL KUMAR\Desktop\CodSoft\collegetips.in\IMG-20250529-WA0010.jpg" alt="Image 5" />
+    </div>
+  </div>
+  <br>
+  <div class="scroll-container">
+    <div class="scroll-container" id="videocoloum">
+        <video src=""></video>
+          
+
+    </div>
+
+  </div>
+</body>
+</html>
